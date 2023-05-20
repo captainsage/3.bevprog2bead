@@ -5,16 +5,10 @@
 #include <vector>
 #include <string>
 
-struct Stored_value{
-    int i = 0;
-    std::string s = "";
-    bool contains_value = false;
-};
 
 
 class Widget {
 protected:
-    Stored_value _stored_value;
     int _x, _y, _size_x, _size_y, _font_size;
     bool _selected = false;
     bool _changed = true;
@@ -29,7 +23,7 @@ public:
     virtual std::vector<Widget*> get_sub_widgets();
     static void co_caller_int(Widget* w, int arg);
     genv::canvas get_display();
-    virtual Stored_value the_stored_value_is();
+//    virtual Stored_value the_stored_value_is();
 };
 
 #endif

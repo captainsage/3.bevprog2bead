@@ -31,6 +31,6 @@ canvas Widget::get_display() {
     return _display;
 }
 
-Stored_value Widget::the_stored_value_is() {
+/*Stored_value Widget::the_stored_value_is() {
     return _stored_value;
-}
+}*/
