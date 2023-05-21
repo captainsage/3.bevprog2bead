@@ -23,7 +23,6 @@ public:
     virtual std::vector<Widget*> get_sub_widgets();
     static void co_caller_int(Widget* w, int arg);
     genv::canvas get_display();
-//    virtual Stored_value the_stored_value_is();
 };
 
 #endif

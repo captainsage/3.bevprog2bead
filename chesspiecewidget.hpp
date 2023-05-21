@@ -11,7 +11,8 @@ protected:
     genv::canvas _piece;
 public:
     ChessPiece(int x, int y, int size_x, int size_y, bool white, genv::canvas starting_piece);
-    void field_refresh(genv::canvas piece);
+    void field_change(genv::canvas piece);
+    genv::canvas get_piece();
     virtual void display_update() override;
     virtual void action(genv::event &ev) override;
     virtual void btn_action_int(int arg) override;
